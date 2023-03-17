@@ -49,8 +49,12 @@ header {
     margin: 1vh 0;
     width:50%;
 }
-li {
+.nav__link {
     text-align:center;
+}
+.nav__link:hover {
+    color:black;
+    opacity:45%;
 }
 /* Styling begins for about: */
 #aboutme {
