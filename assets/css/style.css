@@ -1,4 +1,4 @@
-
+/* Storing */
 :root {
     --dark-green:#4b533a;
     --light-green:#929967;
@@ -19,15 +19,17 @@ h1 {
     font-size:275%;
 }
 
-h1, .nav__break, .nav__link {
+.nav__header , .nav__break, .nav__link {
     color:#f4ece4;
 }
 h2 {
-    font-size:250%;
+    font-size:260%;
 }
 h3 {
     font-size:200%;
 }
+/*Some shared stylings across the page:*/
+
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 }
@@ -51,6 +53,34 @@ li {
     text-align:center;
 }
 /* Styling begins for about: */
+#aboutme {
+    display:flex;
+    margin:3vh 5vh 5vh;
+    flex-flow:wrap row;
+}
+
+#aboutme, #contact, .aboutme__break {
+    color:#564e45;
+}
+.aboutme__break {
+    width:95%;
+    margin:auto;
+    margin-bottom:2vh;
+}
+
+.about__image {
+    width:100%;
+    height:auto;
+}
+aside {
+    /*flex: 1 1 100px;*/
+    min-width:150px;
+    margin: 3vh;
+    flex:1;
+}
+.aboutme__blurb {
+    text-indent:45px;
+}
 /* Styling begins for portfolio: */
 /* Styling begins for contact: */
 /* Styling begins for footer: */
