@@ -1,0 +1,47 @@
+
+:root {
+    --dark-green:#4b533a;
+    --light-green:#929967;
+}
+body {
+    background-color: #f4ece4;
+    line-height:normal;
+    width:100%;
+    font-family: 'Roboto Mono', monospace;
+}
+html, body{
+    margin: 0; padding: 0; width: 100%;
+    height: 100%;
+    overflow-x: hidden !important;
+  }
+/* adding in styling on header sizing */
+h1 {
+    font-size:275%;
+    color:#f4ece4;
+}
+
+h2 {
+    font-size:250%;
+}
+h3 {
+    font-size:200%;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+/* Styling begins for header*/
+header {
+    background-color:var(--light-green);
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+    padding:20px;
+    flex-shrink:0;
+}
+
+li {
+    text-align:center;
+}
