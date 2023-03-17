@@ -17,9 +17,11 @@ html, body{
 /* adding in styling on header sizing */
 h1 {
     font-size:275%;
-    color:#f4ece4;
 }
 
+h1, .nav__break, .nav__link {
+    color:#f4ece4;
+}
 h2 {
     font-size:250%;
 }
@@ -41,7 +43,14 @@ header {
     padding:20px;
     flex-shrink:0;
 }
-
+.nav__break {
+    margin: 1vh 0;
+    width:50%;
+}
 li {
     text-align:center;
 }
+/* Styling begins for about: */
+/* Styling begins for portfolio: */
+/* Styling begins for contact: */
+/* Styling begins for footer: */
