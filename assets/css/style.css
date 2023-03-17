@@ -19,7 +19,7 @@ h1 {
     font-size:275%;
 }
 
-.nav__header , .nav__break, .nav__link, .portfolio__header {
+.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption {
     color:#f4ece4;
 }
 h2 {
@@ -93,6 +93,7 @@ aside {
     flex-flow: wrap row;
     justify-content: center;
 }
+
 .portfolio__header {
     flex-shrink:0;
     flex-basis:100%;
@@ -103,6 +104,14 @@ aside {
     display:flex;
     flex-direction:column;
     margin:1vh;
+    position:relative;
+}
+.portfolio__caption {
+    background-color:var(--light-green);
+    padding: 30px 40px;
+    position:absolute;
+    bottom: 7%;
+    left: 16px;
 }
 .portfolio__figure--regular {
  max-width:40%;
