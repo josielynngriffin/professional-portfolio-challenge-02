@@ -19,7 +19,7 @@ h1 {
     font-size:275%;
 }
 
-.nav__header , .nav__break, .nav__link {
+.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption {
     color:#f4ece4;
 }
 h2 {
@@ -86,5 +86,46 @@ aside {
     text-indent:45px;
 }
 /* Styling begins for portfolio: */
+.portfolio {
+    background-color:var(--dark-green);
+    padding:5vh;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.portfolio__header {
+    flex-shrink:0;
+    flex-basis:100%;
+    margin:5vh;
+    text-align:center;
+}
+.portfolio__figure {
+    display:flex;
+    flex-direction:column;
+    margin:1vh;
+    position:relative;
+}
+.portfolio__caption {
+    background-color:var(--light-green);
+    padding: 30px 40px;
+    position:absolute;
+    bottom: 7%;
+    left: 16px;
+}
+.portfolio__figure--regular {
+ max-width:40%;
+
+}
+.portfolio__figure--focus {
+    flex-basis:80%;
+    /*height:auto;*/
+}
+@media only screen and (max-width:600px) {
+    .portfolio__figure--regular, .portfolio__figure--focus {
+        max-width:100%;
+        flex-basis:100%;
+    }
+}
 /* Styling begins for contact: */
 /* Styling begins for footer: */
