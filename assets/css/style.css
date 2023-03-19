@@ -128,4 +128,18 @@ aside {
     }
 }
 /* Styling begins for contact: */
+.contact-socials {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:wrap row;
+}
+.contact-socials__logo {
+    max-width:125px;
+    max-height:125px;
+    /*margin:auto;*/
+}
+.contact-socials__link:hover {
+    opacity:70%;
+}
 /* Styling begins for footer: */
