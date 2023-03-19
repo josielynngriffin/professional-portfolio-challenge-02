@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1 class="nav__header">josie griffin</h1>
         <hr class="nav__break">
         <nav>
@@ -106,14 +106,21 @@
            </section>
         </section>
     </main>
-    <footer>
-        <p>find me elsewhere!</p>
-        <ul>
-            <li>github</li>
-            <li>linkedin</li>
-            <li>email</li>
-        </ul>
-        <small>&copy josie griffin dev.</small>
+    <footer class="footer">
+        <section class="footerFind">
+            <h4 class="footerFind__header">find me elsewhere!</h4>
+            <ul>
+                <a href="https://github.com/josielynngriffin"><li class="footerFind__list">> github</li></a>
+                <a href="https://linkedin.com"><li class="footerFind__list">> linkedin</li></a>
+                <a href="mailto: jelynngriffin@gmail.com" class="footerFind__list"><li class="footerFind__list ">> jelynngriffin@gmail.com</li></a>
+            </ul>
+        </section>
+        
+        <small class="footerSmall">
+            <a href="#header" class="footerSmall__header" ><h4>josie griffin</h4></a>
+            <hr class="footerSmall__break">
+            <p>&copy josie griffin dev.</p>
+        </small>
     </footer>
 </body>
 
