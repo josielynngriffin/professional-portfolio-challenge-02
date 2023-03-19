@@ -19,7 +19,7 @@ h1 {
     font-size:275%;
 }
 
-.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption, .contactForm__button {
+.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption, .contactForm__button, .footer {
     color:#f4ece4;
 }
 h2 {
@@ -55,8 +55,8 @@ header {
 .nav__link {
     text-align:center;
 }
-.nav__link:hover {
-    color:black;
+.nav__link:hover, .footerFind__list:hover, .footerSmall__header:hover{
+    color:var(--dark-green);
     opacity:45%;
 }
 /* Styling begins for about: */
@@ -212,3 +212,23 @@ aside {
     }
 }
 /* Styling begins for footer: */
+.footer {
+    background-color:var(--light-green);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.footerFind, .footerSmall{
+    margin:2vh;
+}
+.footerFind__img {
+    width:20px;
+    height:20px;
+    display:inline;
+}
+.footerSmall__break {
+    margin: 2vh auto;
+}
+.footerSmall__header {
+    text-align:center;
+}
