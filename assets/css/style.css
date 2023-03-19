@@ -19,7 +19,7 @@ h1 {
     font-size:275%;
 }
 
-.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption {
+.nav__header , .nav__break, .nav__link, .portfolio__header,.portfolio__caption, .contactForm__button {
     color:#f4ece4;
 }
 h2 {
@@ -28,9 +28,12 @@ h2 {
 h3 {
     font-size:200%;
 }
+h4 {
+    font-size:170%;
+}
 /*Some shared stylings across the page:*/
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
 }
 /* Styling begins for header*/
@@ -128,4 +131,79 @@ aside {
     }
 }
 /* Styling begins for contact: */
+.contact-socials {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:wrap row;
+}
+.contact-socials__logo {
+    max-width:125px;
+    max-height:125px;
+    /*margin:auto;*/
+}
+.contact-socials__link:hover {
+    opacity:70%;
+}
+.contactInfo {
+    display:flex;
+    flex-flow: wrap column;
+    justify-content:center;
+    align-items:center;
+    margin:5vh;
+}
+/* This margin property is shared and can probably be consolidated later.*/
+.contactInfo__img {
+    width:50px;
+    height:50px;
+}
+.contactInfo__header, .contactInfo__img, .contactInfo__info {
+    margin:1vh;
+}
+.contactForm__cont {
+    display:flex;
+    flex-flow: nowrap column;
+    padding:15px;
+    max-width:60%;
+    margin:2.5vh auto;
+    border:var(--dark-green) solid 2.5px;
+    border-radius:10px;
+    /*margin:2.5vh;*/
+}
+@media only screen and (max-width:800px) {
+    .contactForm__cont {
+        max-width:85%;
+    }
+}
+.contactForm__header {
+    justify-self:center;
+    align-self:center;
+}
+.contactForm__label {
+    color:var(--dark-green);
+    font-style:bolder;
+}
+.contactForm__input {
+    border-radius:10px;
+    border-style:none;
+}
+.contactForm__message {
+    resize:none;
+}
+.contactForm__button {
+    border-radius:10px;
+    border-style:none;
+    height:5vh;
+    background-color:var(--light-green);
+    align-self:center;
+    width:50%;
+}
+.contactForm__button:hover {
+    background-color:var(--dark-green);
+}
+@media only screen and (max-width:600px) {
+    .contactForm__button {
+        width:65%;
+    }
+}
 /* Styling begins for footer: */
