@@ -130,6 +130,11 @@ aside {
         flex-basis:100%;
     }
 }
+@media only screen and (max-width:400px) {
+    .portfolio__caption {
+        padding:15px 20px;
+    }
+}
 /* Styling begins for contact: */
 .contact-socials {
     display:flex;
