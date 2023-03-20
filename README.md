@@ -12,6 +12,6 @@ I hope to refine this code as I add to this project!
 
 [Email Icon Source](https://iconmonstr.com/email-10-svg/)
 ## Screenshot
-![A screenshot of the live website]()
+![A screenshot of the live website](./assets/images/josie-portfolio-page.png)
 ## Link to Live, Deployed Page
 [Portfolio Page](https://josielynngriffin.github.io/professional-portfolio-challenge-02/index.html)
