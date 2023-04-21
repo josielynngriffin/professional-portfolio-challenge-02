@@ -111,14 +111,25 @@ aside {
 }
 .portfolio__caption {
     background-color:var(--light-green);
-    padding: 30px 40px;
+    /*padding: 2rem 6rem;*/
+    /*width:50%;
+    height:20%;*/
+    padding: 20px;
+    font-size:150%;
     position:absolute;
     bottom: 7%;
     left: 16px;
 }
+.portfolio-focus__caption {
+    width:40%;
+    height:15%;
+}
 .portfolio__figure--regular {
  max-width:40%;
 
+}
+.hover:hover {
+    opacity:85%;
 }
 .portfolio__figure--focus {
     flex-basis:80%;
