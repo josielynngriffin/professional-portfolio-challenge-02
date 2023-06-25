@@ -78,6 +78,8 @@ header {
 .about__image {
     width:100%;
     height:auto;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
 }
 aside {
     /*flex: 1 1 100px;*/
@@ -120,31 +122,30 @@ aside {
     bottom: 7%;
     left: 16px;
 }
-.portfolio-focus__caption {
-    width:40%;
-    height:15%;
-}
+
 .portfolio__figure--regular {
  max-width:40%;
 
 }
-.hover:hover {
+/* .hover:hover {
     opacity:85%;
-}
+} */
 .portfolio__figure--focus {
     flex-basis:80%;
     /*height:auto;*/
 }
-@media only screen and (max-width:600px) {
-    .portfolio__figure--regular, .portfolio__figure--focus {
-        max-width:100%;
-        flex-basis:100%;
-    }
+.portfolio__figure--image{
+    opacity:0.55;
 }
-@media only screen and (max-width:400px) {
-    .portfolio__caption {
-        padding:15px 20px;
-    }
+.portfolio__figure--image:hover {
+    opacity:1;
+    transition: 1s ease;
+}
+.project__subtitle {
+    font-size:80%;
+}
+.portfolio-regular__caption{
+    width:90%;
 }
 /* Styling begins for contact: */
 .contact-socials {
@@ -186,11 +187,7 @@ aside {
     border-radius:10px;
     /*margin:2.5vh;*/
 }
-@media only screen and (max-width:800px) {
-    .contactForm__cont {
-        max-width:85%;
-    }
-}
+
 .contactForm__header {
     justify-self:center;
     align-self:center;
@@ -217,11 +214,6 @@ aside {
 .contactForm__button:hover {
     background-color:var(--dark-green);
 }
-@media only screen and (max-width:600px) {
-    .contactForm__button {
-        width:65%;
-    }
-}
 /* Styling begins for footer: */
 .footer {
     background-color:var(--light-green);
@@ -242,4 +234,42 @@ aside {
 }
 .footerSmall__header {
     text-align:center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:820px) {
+    .contactForm__cont {
+        max-width:85%;
+    }
+    .portfolio-focus__caption{
+        width:70%;
+        height:auto;
+    }
+}
+@media only screen and (max-width:600px) {
+    .contactForm__button {
+        width:65%;
+    }
+    .portfolio__figure--regular, .portfolio__figure--focus {
+        max-width:100%;
+        flex-basis:100%;
+    }
+    .portfolio__caption{
+        font-size:100%;
+    }
+    .portfolio{
+        padding:0;
+    }
+    .about__image {
+        border-top-left-radius: 150px;
+        border-top-right-radius:150px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .portfolio__caption {
+        padding:15px 20px;
+    }
+    
+
 }
